@@ -1,0 +1,50 @@
+<form class="room-selection-form">
+    <h2 class="hotel-page__block-title">Available rooms</h2>
+
+    <fieldset>
+        <table class="rooms-table">
+
+            <thead>
+                <th class="rooms-table__room__name">Room Name</th>
+                <th class="rooms-table__room__occupancy">Occupancy</th>
+                <th class="rooms-table__room__price">Price per Room</th>
+                <th class="rooms-table__room__select">No.Rooms</th>
+            </thead>
+
+            <tbody>
+                <% rooms.each do |room, i| %>
+                    <tr class="rooms-table__room">
+                        <td class="rooms-table__room__name">
+                            <%= room[:name] %>
+                        </td>
+                        <td class="rooms-table__room__occupancy">
+                            <%= room[:occupancy] %>
+                        </td>
+                        <td class="rooms-table__room__price">
+                            <%= room[:price_per_room] %>
+                        </td>
+                        <td class="rooms-table__room__select">
+                            <select name="room[#{i}][occupancy]">
+                                <% (0..10).each do |j| %>
+                                    <option value="<%= i %>"><%= i %></option>
+                                <% end %>
+                            </select>
+                        </td>
+                    </tr>
+                <% end %>
+            </tbody>
+        </table>
+
+        <div class="room-selection-form__summary">
+            <p>
+                <span class="room-selection-form__summary__rooms">0 rooms</span>
+                for
+                <span class="room-selection-form__summary__total-price">€0.00</span>
+            </p>
+        </div>
+
+        <div class="room-selection-form__submit-wrapper">
+            <button class="room-selection-form__submit">Book now</button>
+        </div>
+    </fieldset>
+</form>

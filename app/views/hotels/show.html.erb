@@ -1,5 +1,11 @@
-<h1>Grand Hotel Budapest</h1>
+<%= render partial: "shared/breadcrumbs", locals: { items: ["Home", "Colombia", "Antioquia", "Medellín hotels", "El Poblado", "Diez Hotel Categoría Colombia"] } %>
 
-<% ab_test(:hotel_copy, "base", "variant") do |text| %>
-  <p>This is <%= text %></p>
-<% end %>
+<%= render partial: "hotels/header", locals: { hotel: @hotel } %>
+
+<%= render partial: "hotels/gallery", locals: { photos: @hotel[:photos] } %>
+
+<%= render partial: "hotels/description", locals: { hotel: @hotel } %>
+
+<%= render partial: "hotels/rooms", locals: { rooms: @hotel[:rooms] } %>
+
+<%= render partial: "hotels/reviews", locals: { reviews: @hotel[:reviews] } %>

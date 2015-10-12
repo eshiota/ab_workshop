@@ -1,0 +1,13 @@
+<div class="hotel-page__gallery">
+    <div class="hotel-page__gallery__main-photo">
+    </div>
+    <ul class="hotel-page__gallery__photos">
+        <% (1..13).each do |i| %>
+            <li>
+                <%= link_to(image_url "_samples/#{i}_large.jpg") do %>
+                    <%= image_tag "_samples/#{i}_thumb.jpg" %>
+                <% end %>
+            </li>
+        <% end %>
+    </ul>
+</div>

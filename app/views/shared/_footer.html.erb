@@ -1,0 +1,40 @@
+<footer class="main-footer">
+    <div class="main-footer__newsletter">
+        <div class="main-footer__newsletter__content">
+            <h3>Save up to 50% off your next trip <small>Secret Deals – for our subscribers only</small></h3>
+
+            <form class="main-footer__newsletter-form">
+                <fieldset>
+                    <input type="email" placeholder="Your email" class="main-footer__newsletter-form__input" />
+                    <label class="main-footer__newsletter-form__app-link-option">
+                        <input type="checkbox" />
+                        <strong>Send me a link to get the FREE Booking.com app!</strong>
+                    </label>
+                    <button class="main-footer__newsletter-form__submit">Subscribe</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-footer__products">
+        <div class="main-footer__products__content">
+            <%= render :partial => "shared/footer/products_items",
+                    :locals => { :links => ["Manage booking", "Customer Service", "Become an affiliate", "Booking.com for Business", "Add your property"] } %>
+        </div>
+    </div>
+
+    <div class="main-footer__sitemap">
+        <div class="main-footer__sitemap__content">
+            <%= render :partial => "shared/footer/sitemap_items",
+                    :locals => { :links => ["Countries", "Regions", "Cities", "Districts", "Airports", "Hotels", "Places of Interest"] } %>
+            <%= render :partial => "shared/footer/sitemap_items",
+                    :locals => { :links => ["Apartments", "Resorts", "Villas", "Hostels", "B&Bs", "Guesthouses", "Hotel Chains", "All Property Types"] } %>
+            <%= render :partial => "shared/footer/sitemap_items",
+                    :locals => { :links => ["About Booking.com", "Car Rental", "Villas.com", "Destination Finder", "FAQ", "Terms & Conditions", "Privacy and Cookies", "Contact Us"] } %>
+        </div>
+
+        <p>
+            Booking.com B.V. is based in Amsterdam in the Netherlands, and is supported internationally by <a href="#">170 offices in 66 countries</a>.
+        </p>
+    </div>
+</footer>

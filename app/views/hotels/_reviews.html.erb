@@ -1,0 +1,15 @@
+<div class="hotel-page__reviews">
+    <h2 class="hotel-page__block-title">Reviews</h2>
+
+    <ul class="reviews-list">
+        <% reviews.each do |review| %>
+            <li class="reviews-list__item">
+                <strong class="reviews-list__item__score"><%= review[:score] %></strong>
+
+                <p class="reviews-list__item__text">
+                    <%= review[:text] %>
+                </p>
+            </li>
+        <% end %>
+    </ul>
+</div>

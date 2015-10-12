@@ -1,0 +1,11 @@
+<div class="hotel-page__header">
+    <h1 class="hotel-page__header__name">
+        <%= hotel[:name] %>
+
+        <span class="hotel-page__header__stars">
+            <%= "★" * hotel[:stars].to_i %>
+        </span>
+    </h1>
+
+    <p class="hotel-page__header__address"><%= hotel[:address] %></p>
+</div>
