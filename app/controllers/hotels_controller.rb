@@ -1,21 +1,24 @@
 class HotelsController < ApplicationController
   def show
+    @breadcrumbs = [
+        "Home",
+        "Netherlands",
+        "Noord-holland",
+        "Amsterdam hotels",
+        "Amsterdam city center",
+        "Grand Hotel Budapest"
+    ]
+
     @hotel = {
-        name: "Diez Hotel Categoría Colombia",
+        name: "Grand Hotel Budapest",
         stars: 5,
-        address: "Calle 10A No. 34-11, El Poblado, 050010 Medellín, Colombia",
-        tagline: "Stay in the Heart of Medellín",
-        description: "Inspired by the culture of Colombia, this designer hotel has luxurious rooms, free Wi-Fi and spa facilities. In the commercial center of Medellin, only 7 blocks from the Poblado Subway.
+        address: "Herengracht 597, 1017 CE Amsterdam, Netherlands",
+        tagline: "Stay in the Heart of Amsterdam",
+        description: "Offering an outdoor pool and a restaurant, Grand Hotel Budapest is located in Amsterdam. WiFi access is available. At Hotel Tito you will find a fitness centre and free bikes. Other facilities offered at the property include entertainment staff, a nightclub and water sports facilities. An array of activities can be enjoyed on site or in the surroundings, including skiing, golfing and cycling.
 
-Each floor is inspired by a different region. The rooms at the Diez Hotel are decorated with local handcrafts in combination with modern technology. All have a view of the mountain and the city.
+The hotel is 100 metres from Royal Palace Amsterdam, 100 metres from Dam Square and 400 metres from Beurs van Berlage. Schiphol Airport is 11 km away.
 
-Wellness facilities include several massage treatments, a sauna and a Turkish steam bath. Guests can also relax in the hot tub, and enjoy the views. The Diez Hotel's tour desk can arrange trips in the area. Souvenirs can be bought in the gift shop.
-
-Dining options are available at Guaduas Bar, Boga and Diez Restaurant, that serve national and international dishes. In the commercial area on the ground floor, several other restaurants have different food choices.
-
-José María Córdova International Airport is 16.1 km away. Free parking is available on site when arriving by car.
-
-El Poblado is a great choice for travelers interested in nightlife, food and shopping.",
+Amsterdam City Center is a great choice for travelers interested in sightseeing, nightlife and food.",
         rooms: [
             {
                 name: "Basic 2 Bed",

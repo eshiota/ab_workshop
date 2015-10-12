@@ -1,0 +1,8 @@
+.logo {
+    @extend %image-replacement;
+    background: image-url("logo.png") no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 25px;
+    display: block;
+}

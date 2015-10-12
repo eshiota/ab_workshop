@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'spriteful'
 gem 'split', require: 'split/dashboard'
+gem 'sass-globbing'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

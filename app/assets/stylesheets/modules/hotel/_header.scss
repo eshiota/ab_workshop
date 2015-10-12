@@ -1,0 +1,15 @@
+.hotel-page__header {
+    margin-bottom: lines(1);
+}
+
+.hotel-page__header__name {
+    font-size: em(32px);
+    line-height: lines(1.5, 32px);
+    font-weight: bold;
+    color: $core-color-dark-blue;
+}
+
+.hotel-page__header__stars {
+    color: $core-color-yellow;
+    font-size: em(18px, 32px);
+}

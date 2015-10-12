@@ -1,0 +1,20 @@
+.hotel-page__block {
+    margin-bottom: lines(2);
+}
+
+.hotel-page__block__title {
+    font-size: em(24px);
+    line-height: lines(1, 24px);
+    font-weight: bold;
+    margin-bottom: lines(0.5);
+}
+
+.hotel-page__description {
+    p {
+        margin-bottom: lines(1);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

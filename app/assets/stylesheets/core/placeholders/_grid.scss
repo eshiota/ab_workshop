@@ -1,0 +1,13 @@
+@for $i from 1 through 12 {
+    %fixed-column-#{$i} {
+        width: fixed-columns-width($i);
+    }
+}
+
+%centered-content {
+    @extend %fixed-column-#{$core-1024-grid-columns};
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $core-gutter-width/2;
+    padding-right: $core-gutter-width/2;
+}

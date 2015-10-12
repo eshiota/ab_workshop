@@ -1,0 +1,17 @@
+.breadcrumb__item {
+    font-size: em(12px);
+    display: inline-block;
+    margin-bottom: lines(1, 12px);
+
+    &:after {
+        content: "→";
+        color: $core-color-yellow;
+        font-size: em(11px, 12px);
+        display: inline-block;
+        margin: 0 em(2px, 11px);
+    }
+
+    &:last-of-type:after {
+        display: none;
+    }
+}

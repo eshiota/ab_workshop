@@ -1,0 +1,22 @@
+.rooms-table {
+    width: 100%;
+}
+
+.rooms-table__head-cell {
+    font-size: em(14px);
+    background: $core-color-light-blue;
+    color: #fff;
+    font-weight: bold;
+    padding: em(5px, 14px);
+    text-align: left;
+}
+
+.rooms-table__room {
+    &:nth-of-type(2n) .rooms-table__body-cell {
+        background: $core-color-light-gray;
+    }
+}
+
+.rooms-table__body-cell {
+    padding: em(5px);
+}

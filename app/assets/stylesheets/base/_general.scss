@@ -1,0 +1,12 @@
+a,
+a:visited {
+    color: $core-color-blue;
+
+    &:hover {
+        color: lighten($core-color-blue, 20%);
+    }
+
+    &:active {
+        color: darken($core-color-blue, 10%);
+    }
+}

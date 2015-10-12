@@ -1,0 +1,7 @@
+@function em($target, $context: $core-font-size) {
+    @return #{($target/$context)}em;
+}
+
+@function lines($quantity, $context: $core-font-size) {
+    @return #{$quantity * ($core-baseline/$context)}em;
+}

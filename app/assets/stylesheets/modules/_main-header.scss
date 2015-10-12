@@ -1,0 +1,10 @@
+.main-header {
+    box-sizing: border-box;
+    height: lines(2);
+    background: $core-color-dark-blue;
+    padding-top: lines(.5);
+}
+
+.main-header__content {
+    @extend %centered-content;
+}

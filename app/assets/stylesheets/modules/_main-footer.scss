@@ -1,0 +1,96 @@
+////////////////////////////////////////////////////////////////////////////////
+//  Newsletter
+////////////////////////////////////////////////////////////////////////////////
+
+.main-footer__newsletter {
+    background: darken($core-color-dark-blue, 10%);
+}
+
+.main-footer__newsletter__content {
+    @extend %centered-content;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//  Products
+////////////////////////////////////////////////////////////////////////////////
+
+.main-footer__products {
+    background: $core-color-dark-blue;
+}
+
+.main-footer__products__content {
+    @extend %centered-content;
+}
+
+.main-footer__products__items {
+    overflow: hidden;
+}
+
+.main-footer__products__item {
+    font-size: 14px;
+    float: left;
+    line-height: lines(2, 14px);
+    border-right: 1px solid lighten($core-color-dark-blue, 5%);
+    font-weight: bold;
+    padding: 0 em(10px, 14px);
+
+    &:first-of-type {
+        padding-left: 0;
+    }
+
+    &:last-of-type {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+        color: #fff;
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//  Sitemap
+////////////////////////////////////////////////////////////////////////////////
+
+.main-footer__sitemap {
+    background: $core-color-light-gray;
+    padding-bottom: lines(2);
+}
+
+.main-footer__sitemap__content {
+    @extend %centered-content;
+    overflow: hidden;
+    padding-top: lines(1.5);
+    padding-bottom: lines(1.5);
+}
+
+.main-footer__sitemap__items {
+    @extend %fixed-column-3;
+    margin-right: $core-gutter-width;
+    float: left;
+    font-size: em(14px);
+    line-height: lines(1, 14px);
+}
+
+.main-footer__sitemap__items a {
+    @extend %inverted-underline;
+    font-weight: bold;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//  Copyright
+////////////////////////////////////////////////////////////////////////////////
+
+.main-footer__copyright {
+    @extend %centered-content;
+    text-align: center;
+    border-top: 1px solid darken($core-color-light-gray, 10%);
+    border-bottom: 1px solid darken($core-color-light-gray, 10%);
+    font-size: em(12px);
+    line-height: lines(1, 12px);
+    padding-top: lines(.5, 12px);
+    padding-bottom: lines(.5, 12px);
+}

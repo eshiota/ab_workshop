@@ -1,32 +1,32 @@
-<form class="room-selection-form">
-    <h2 class="hotel-page__block-title">Available rooms</h2>
+<form class="room-selection-form hotel-page__block">
+    <h2 class="hotel-page__block__title">Available rooms</h2>
 
     <fieldset>
         <table class="rooms-table">
 
             <thead>
-                <th class="rooms-table__room__name">Room Name</th>
-                <th class="rooms-table__room__occupancy">Occupancy</th>
-                <th class="rooms-table__room__price">Price per Room</th>
-                <th class="rooms-table__room__select">No.Rooms</th>
+                <th class="rooms-table__head-cell rooms-table__room__name">Room Name</th>
+                <th class="rooms-table__head-cell rooms-table__room__occupancy">Occupancy</th>
+                <th class="rooms-table__head-cell rooms-table__room__price">Price per Room</th>
+                <th class="rooms-table__head-cell rooms-table__room__select">No.Rooms</th>
             </thead>
 
             <tbody>
-                <% rooms.each do |room, i| %>
+                <% rooms.each_with_index do |room, i| %>
                     <tr class="rooms-table__room">
-                        <td class="rooms-table__room__name">
+                        <td class="rooms-table__body-cell rooms-table__room__name">
                             <%= room[:name] %>
                         </td>
-                        <td class="rooms-table__room__occupancy">
+                        <td class="rooms-table__body-cell rooms-table__room__occupancy">
                             <%= room[:occupancy] %>
                         </td>
-                        <td class="rooms-table__room__price">
+                        <td class="rooms-table__body-cell rooms-table__room__price">
                             <%= room[:price_per_room] %>
                         </td>
-                        <td class="rooms-table__room__select">
-                            <select name="room[#{i}][occupancy]">
+                        <td class="rooms-table__body-cell rooms-table__room__select">
+                            <select name="room[<%= i %>][occupancy]">
                                 <% (0..10).each do |j| %>
-                                    <option value="<%= i %>"><%= i %></option>
+                                    <option value="<%= j %>"><%= j %></option>
                                 <% end %>
                             </select>
                         </td>

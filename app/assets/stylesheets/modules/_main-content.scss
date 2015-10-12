@@ -1,0 +1,5 @@
+.main-content {
+    padding-top: lines(1);
+    padding-bottom: lines(1);
+    @extend %centered-content;
+}

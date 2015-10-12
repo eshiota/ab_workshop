@@ -1,0 +1,25 @@
+.hotel-page__gallery__main-photo {
+    margin-bottom: lines(.5);
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.hotel-page__gallery__thumbs {
+    overflow: hidden;
+}
+
+.hotel-page__gallery__thumb {
+    float: left;
+    width: em(40px);
+    height: em(40px);
+    margin-right: em(5px);
+    margin-bottom: em(5px);
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}

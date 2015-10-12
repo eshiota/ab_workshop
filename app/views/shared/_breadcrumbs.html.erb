@@ -1,10 +1,8 @@
 <div class="breadcrumb">
     <ol class="breadcrumb__items">
-        <% items.each do |item| %>
+        <% @breadcrumbs.each do |item| %>
             <li class="breadcrumb__item">
-                <a href="#" class="breadcrumb__link">
-                    <%= item %>
-                </a>
+                <a href="#" class="breadcrumb__link"><%= item %></a>
             </li>
         <% end %>
     </ol>
