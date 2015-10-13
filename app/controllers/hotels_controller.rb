@@ -21,14 +21,29 @@ The hotel is 100 metres from Royal Palace Amsterdam, 100 metres from Dam Square 
 Amsterdam City Center is a great choice for travelers interested in sightseeing, nightlife and food.",
         rooms: [
             {
-                name: "Basic 2 Bed",
+                name: "Standard Twin Room",
                 occupancy: 2,
                 price_per_room: 88.99
             },
             {
-                name: "Basic Family Room",
-                occupancy: 7,
+                name: "Triple Room",
+                occupancy: 3,
                 price_per_room: 98.99
+            },
+            {
+                name: "Basic Family Room",
+                occupancy: 4,
+                price_per_room: 120.99
+            },
+            {
+                name: "Luxurious Family Room",
+                occupancy: 8,
+                price_per_room: 120.99
+            },
+            {
+                name: "Master Suite",
+                occupancy: 4,
+                price_per_room: 200.99
             }
         ],
         reviews: [
