@@ -3,11 +3,11 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_action :fetch_experiments, :assign_variants_on_all_experiments
+  before_action :fetch_experiments_from_file, :assign_variants_on_all_experiments
 
-  def fetch_experiments
-    @experiments = Split::ExperimentCatalog.all
-    @experiments_list = @experiments.map { |experiment| experiment.name }
+  def fetch_experiments_from_file
+    @experiments_list ||= parse_experiments_file
+    @experiments = @experiments_list.map { |name| Split::ExperimentCatalog::find_or_create name }
   end
 
   def assign_variants_on_all_experiments
@@ -16,5 +16,11 @@ class ApplicationController < ActionController::Base
         alt = trial.choose!
         alt ? alt.name : nil
     end
+  end
+
+  private
+
+  def parse_experiments_file
+    YAML.load_file("config/experiments.yml").keys
   end
 end
