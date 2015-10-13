@@ -1,0 +1,14 @@
+%button {
+    cursor: pointer;
+    background: $core-color-blue;
+    line-height: lines(1);
+    padding: lines(.25) em(14px);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+%large-button {
+    @extend %button;
+    font-size: em(21px);
+}

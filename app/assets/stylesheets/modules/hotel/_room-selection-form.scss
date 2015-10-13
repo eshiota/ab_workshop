@@ -1,0 +1,16 @@
+.room-selection-form__summary {
+    text-align: right;
+    font-size: em(21px);
+    line-height: lines(1, 21px);
+    padding: lines(.5) em(21px, 21px);
+    color: $core-color-dark-blue;
+}
+
+.room-selection-form__submit-wrapper {
+    padding: 0 em(21px, 21px);
+    text-align: right;
+}
+
+.room-selection-form__submit {
+    @extend %large-button;
+}

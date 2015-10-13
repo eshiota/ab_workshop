@@ -7,7 +7,7 @@
     background: $core-color-light-blue;
     color: #fff;
     font-weight: bold;
-    padding: em(5px, 14px);
+    padding: em(5px, 14px) em(8px, 14px);
     text-align: left;
 }
 
@@ -15,8 +15,12 @@
     &:nth-of-type(2n) .rooms-table__body-cell {
         background: $core-color-light-gray;
     }
+
+    &:last-of-type .rooms-table__body-cell {
+        border-bottom: 1px solid $core-color-light-blue;
+    }
 }
 
 .rooms-table__body-cell {
-    padding: em(5px);
+    padding: em(5px, 14px) em(8px, 14px);
 }

@@ -1,0 +1,29 @@
+.reviews-list__item {
+    background: lighten($core-color-light-blue, 40%);
+    margin-bottom: lines(.5);
+    padding: lines(.5) em(16px);
+    overflow: hidden;
+    position: relative;
+}
+
+.reviews-list__item__score {
+    font-size: em(48px);
+    line-height: lines(3, 48px);
+    width: lines(3, 48px);
+    text-align: center;
+    background: $core-color-light-blue;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    left: em(16px, 48px);
+    top: lines(.5, 48px);
+}
+
+.reviews-list__item__text {
+    padding-left: lines(3.5);
+}
+
+.reviews-list__item__author {
+    font-size: em(14px);
+    margin-bottom: lines(.5, 14px);
+}

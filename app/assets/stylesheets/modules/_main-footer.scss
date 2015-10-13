@@ -4,10 +4,52 @@
 
 .main-footer__newsletter {
     background: darken($core-color-dark-blue, 10%);
+    padding: lines(1.5) 0;
 }
 
 .main-footer__newsletter__content {
     @extend %centered-content;
+}
+
+.main-footer__newsletter__title {
+    font-size: em(24px);
+    color: #fff;
+    margin-bottom: lines(1, 24px);
+
+    small {
+        color: $core-color-light-blue;
+        font-size: em(18px, 24px);
+    }
+}
+
+.main-footer__newsletter-form {
+    padding-bottom: lines(1.5);
+    position: relative;
+}
+
+.main-footer__newsletter-form__input {
+    @extend %fixed-column-4;
+    font-size: em(24px);
+    background: #fff;
+    line-height: lines(1, 24px);
+    padding: lines(.5, 24px) em(8px, 24px);
+    border: none;
+    border-radius: 5px;
+}
+
+.main-footer__newsletter-form__app-link-option {
+    font-size: em(14px);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: lines(1.5, 14px);
+}
+
+.main-footer__newsletter-form__submit {
+    @extend %button;
+    font-size: em(24px);
+    border-radius: 5px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

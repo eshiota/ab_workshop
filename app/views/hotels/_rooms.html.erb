@@ -21,7 +21,7 @@
                             <%= room[:occupancy] %>
                         </td>
                         <td class="rooms-table__body-cell rooms-table__room__price">
-                            <%= room[:price_per_room] %>
+                            <%= number_to_currency(room[:price_per_room], unit: "€", separator: ".") %>
                         </td>
                         <td class="rooms-table__body-cell rooms-table__room__select">
                             <select name="room[<%= i %>][occupancy]">
@@ -38,7 +38,7 @@
         <div class="room-selection-form__summary">
             <p>
                 <span class="room-selection-form__summary__rooms">0 rooms</span>
-                for
+                selected for
                 <span class="room-selection-form__summary__total-price">€0.00</span>
             </p>
         </div>

@@ -6,9 +6,10 @@
             <li class="reviews-list__item">
                 <strong class="reviews-list__item__score"><%= review[:score] %></strong>
 
-                <p class="reviews-list__item__text">
-                    <%= review[:text] %>
-                </p>
+                <div class="reviews-list__item__text">
+                    <h3 class="reviews-list__item__author"><%= review[:author] %>:</h3>
+                    <%= simple_format(review[:text]) %>
+                </div>
             </li>
         <% end %>
     </ul>

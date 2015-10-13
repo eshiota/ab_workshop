@@ -1,18 +1,9 @@
 <footer class="main-footer">
     <div class="main-footer__newsletter">
         <div class="main-footer__newsletter__content">
-            <h3>Save up to 50% off your next trip <small>Secret Deals – for our subscribers only</small></h3>
+            <h3 class="main-footer__newsletter__title">Save up to 50% off your next trip <small>Secret Deals – for our subscribers only</small></h3>
 
-            <form class="main-footer__newsletter-form">
-                <fieldset>
-                    <input type="email" placeholder="Your email" class="main-footer__newsletter-form__input" />
-                    <label class="main-footer__newsletter-form__app-link-option">
-                        <input type="checkbox" />
-                        <strong>Send me a link to get the FREE Booking.com app!</strong>
-                    </label>
-                    <button class="main-footer__newsletter-form__submit">Subscribe</button>
-                </fieldset>
-            </form>
+            <%= render "shared/footer/newsletter_form" %>
         </div>
     </div>
 
