@@ -8,7 +8,7 @@ class ExperimentsController < ApplicationController
         }
     end
 
-    variant = ab_test(params[:name].to_s)
+    variant = track_experiment(params[:name].to_s)
 
     render json: {
         status: 'ok',
