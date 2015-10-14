@@ -1,8 +1,8 @@
-my_sample_experiment:
+sample_experiment_1:
     alternatives:
         - a
         - b
-my_other_sample_experiment:
+sample_experiment_2:
     alternatives:
         - a
         - b
