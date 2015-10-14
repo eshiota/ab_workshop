@@ -1,0 +1,1 @@
+gallery.init($('[data-hotel-gallery]'));

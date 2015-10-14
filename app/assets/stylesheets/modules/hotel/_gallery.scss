@@ -1,25 +1,40 @@
 .hotel-page__gallery__main-photo {
+    height: lines(22);
     margin-bottom: lines(.5);
+    position: relative;
+    overflow: hidden;
 
     img {
         width: 100%;
         display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 11;
+
+        &.hotel-page__gallery__main-photo--bottom {
+            z-index: 10;
+        }
     }
 }
 
 .hotel-page__gallery__thumbs {
-    overflow: hidden;
+    @extend %clearfix;
 }
 
 .hotel-page__gallery__thumb {
     float: left;
-    width: em(40px);
-    height: em(40px);
-    margin-right: em(5px);
-    margin-bottom: em(5px);
+    width: em(60px);
+    height: em(60px);
+    margin-right: em(10px);
+    margin-bottom: em(10px);
 
     img {
         max-width: 100%;
         display: block;
     }
+}
+
+.hotel-page__gallery__thumb--active {
+    box-shadow: 0 0 0 5px $core-color-blue;
 }

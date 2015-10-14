@@ -1,11 +1,15 @@
-<div class="hotel-page__gallery hotel-page__block">
-    <div class="hotel-page__gallery__main-photo">
+<div class="hotel-page__gallery hotel-page__block" data-hotel-gallery>
+    <div class="hotel-page__gallery__main-photo" data-hotel-gallery-main-photo>
         <%= image_tag "_samples/1_large.jpg" %>
     </div>
     <ul class="hotel-page__gallery__thumbs">
         <% (1..12).each do |i| %>
-            <li class="hotel-page__gallery__thumb">
-                <%= link_to(image_url "_samples/#{i}_large.jpg") do %>
+            <li class="hotel-page__gallery__thumb" data-hotel-gallery-thumb data-hotel-gallery-thumb-id="<%= i - 1 %>">
+                <%= link_to(image_url("_samples/#{i}_large.jpg"),
+                    class: 'hotel-page__gallery__thumb__img',
+                    data: {
+                        "hotel-gallery-link": ""
+                    }) do %>
                     <%= image_tag "_samples/#{i}_thumb.jpg" %>
                 <% end %>
             </li>

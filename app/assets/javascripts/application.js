@@ -12,3 +12,5 @@
 //
 //= require jquery
 //= require lib/experiments/track
+//= require hotel/gallery
+//= require hotel/init
