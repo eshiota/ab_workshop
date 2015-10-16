@@ -6,7 +6,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
-gem 'split', require: 'split/dashboard', path: '/Users/eshiota/Sites/oss/split'
+gem 'split', require: 'split/dashboard', git: 'git@github.com:eshiota/split.git'
 gem 'sass-globbing'
 
 group :development do

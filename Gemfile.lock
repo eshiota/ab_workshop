@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/eshiota/Sites/oss/split
+GIT
+  remote: git@github.com:eshiota/split.git
+  revision: 458a555f7160fa864cda4a03f3d134ada5292fa1
   specs:
     split (1.2.1)
       redis (>= 2.1)
