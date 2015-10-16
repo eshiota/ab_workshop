@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   get 'experiments/track'
 
+  get 'checkout/success'
+
   mount Split::Dashboard, at: 'split'
 end

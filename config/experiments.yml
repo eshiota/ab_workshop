@@ -2,16 +2,9 @@ sample_experiment_1:
     alternatives:
         - a
         - b
+    metric: "conversion"
 sample_experiment_2:
     alternatives:
         - a
         - b
-increase_fontsize_in_hotel_description:
-    alternatives:
-        - a
-        - b
-change_hotel_gallery_speed:
-    alternatives:
-        - a
-        - b
-        - c
+    metric: "conversion"
