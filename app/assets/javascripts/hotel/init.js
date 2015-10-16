@@ -1,1 +1,3 @@
-gallery.init($('[data-hotel-gallery]'));
+var config = {};
+
+gallery.init($('[data-hotel-gallery]'), config);
